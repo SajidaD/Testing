@@ -1,0 +1,232 @@
+/* Empty. Add your own CSS if you like */
+
+.completed {
+	/*Namrata I have just added below one line*/
+	background: green;
+  font-weight: bold; }
+  
+  .completed.status{
+  	background: red;
+  }
+
+#box {
+    width:auto;
+    height:auto;
+    word-wrap:break-word;
+	font-size:medium;
+    /*overflow:scroll;*/
+  /*  margin-left:0px;*/
+   
+    
+}
+#backBtn
+{
+	left-padding:150px;
+	
+}
+  
+.itemRight {
+  position: absolute;
+  height: auto;
+    width: auto;
+    top: 3%;
+	bottom: 3%;
+    right:0px;
+   
+    }
+    
+    .blue {
+    	font-size:medium;
+    }
+
+.boldFont {
+    	font-weight:bold;
+    	font-size:medium;
+    }
+    
+.tabs-top > .tabs, .tabs.tabs-top
+{
+	  /*top: 0;*/
+  padding-top: 0;
+  background-position: bottom;
+  border-top-width: 3px;
+  border-top-width-color: gray;
+  border-bottom-width-color: gray;
+  border-bottom-width: 3px;
+  background-color:#D1D1D1;
+  
+ 
+}
+
+
+
+/*.has-tabs-top {
+  top: 50px;
+}*/
+.cell
+{
+	background-color:#F1F1F1;
+  	top: 0;
+	padding-top: 0;
+  	bottom: 0;
+	padding-bottom: 0;
+	border-width :1px;
+	border-color : black;
+	
+
+}
+.issueTab
+{
+    font-size:large;
+    font-weight:bold;
+}
+.detailColRight
+{
+  font-size:medium;
+  text-align:right;
+	
+}
+.detailColLeft
+{
+  font-size:medium;
+  text-align:left;
+	
+}
+.detailCol
+{
+  font-size:medium;
+	
+}
+
+.ion-android-arrow-back{
+	position:absolute;
+	font-size:30px;
+	top:7px;
+	left:15px;
+}
+.icon ion-home {
+	font-size:30px;
+}
+
+.ion-information-circled{
+	font-size:25px;
+}
+
+.col1
+{
+	/*background-color:green;*/
+}
+.directionImage
+{
+	left:0;
+	padding-left:0; 
+
+	
+}
+.dirh2
+{
+    font-size:large;
+    font-weight:bold;
+    word-wrap:break-word;
+    width:auto;
+    height:auto;
+	
+	
+}
+.dirh4
+{
+    font-size:medium;
+    font-weight:normal;
+	/*word-wrap:break-word;*/
+    width:auto;
+    height:auto;
+	display: inline-block;
+	word-break: break-all;
+	lines:4;
+}
+
+#dirCol
+{
+	width : 20%;
+	
+}
+#dirCol2
+{
+	width:80%;
+	
+}
+.dirCell
+{
+	border-width :1px;
+	border-color : black;
+	height:auto;
+	width:auto;
+	word-wrap:break-word;
+	break-word: break-all;
+}
+.dirView
+{
+	background-color:#F1F1F1;
+	/*background-color:gray;*/
+}
+.col
+{
+	word-wrap:break-word;
+}
+
+.ion-alert-circled{
+	position:absolute;
+	font-size:35;
+	left:35%;
+}
+
+#disableBtn {
+	color:grey;
+	background: #444444;
+	border-width: 1.0px;
+	border-color:black;
+}
+
+.button.button-block, .button.button-full {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  background: white;
+  color:black;
+}
+
+.bar .buttons, .bar .buttons.primary-buttons, .bar .buttons.secondary-buttons {
+  display: inherit;
+  height: 35px;
+}
+
+#customBtn {
+	color:black;
+	background: white;
+	border-width: 1.0px;
+	border-color:black;
+}
+
+.button.button-block:hover {
+
+  background: white;
+  color:black;
+}
+
+.adp-step, .adp-substep {
+  border-top: 1px solid #cdcdcd;
+  margin: 0;
+  padding: .3em 3px;
+  vertical-align: top;
+  font-size:120%;
+  font-family:Helvetica;
+}
+
+#resetBtn {
+	 background: white;
+  color:black;
+}
+
+.titleCenter{
+	position:absolute;
+	left:48%;
+}

@@ -1,0 +1,74 @@
+<ion-view cache-view="false">
+    <ion-nav-title class="titleCenter">{{navtitle}}</ion-nav-title>
+    <ion-nav-buttons side="primary">
+        <a class="button icon ion-home" ng-click="close()"></a>
+    </ion-nav-buttons>
+    <!-- <ion-nav-buttons side="right"><a class="button icon ion-plus-round" ui-sref="create.general"></a></ion-nav-buttons>  -->
+    <br>
+        <br>
+            <div>
+                <ion-tabs class="tabs-top" delegate-handle="my-tabs" has-header="false">
+                    <ion-tab class="issueTab" title="OPEN" ng-click="goPage(0)">
+                        <!--<h1>about tab</h1>-->
+                    </ion-tab>
+                    <ion-tab class="issueTab" title="RESOLVED" ng-click="goPage(1)"></ion-tab>
+                </ion-tabs>
+            </div>
+            <ion-content>
+                <br>
+                    <br>
+                        <ion-list>
+                            <div class="card">
+                                <ion-item class="cell" ng-repeat="item in data | orderBy:'reported' |orderBy:getDistanceFilter| orderBy:statusFilter | orderBy:userFirst track by item._id" ng-click="next(item)">
+                                   <div class="row"> 
+                                        <div class="col">
+                                            <span class="boldFont1">{{item.id}}</span>
+                                        </div>
+                                        <div class="col" ng-if="item.status != 'Closed'">
+                                            <span class="boldFont">{{getDistanceFromLatLonInKm(item)}}&nbspkm</span>
+                                        </div>
+                                    </div>
+									<div class="row"> 
+                                    <div class="col">
+                                        <!-- <span class="boldFont">{{item.latestStateChange | date:"yyyy-MM-dd  h:mma"}}</span> -->
+                                        <span class="boldFont">{{getdatetime(item)}}</span>
+                                    </div>
+									</div>
+									<div class="row"> 
+                                    <div class="col">
+                                        <span class="blue">{{item.type}}</span>
+                                    </div>
+									</div>
+									<div class="row"> 
+                                    <div class="col">
+                                        <span class="blue">{{getAssignedMember(item)}}
+                                            <span class="boldFont">{{boldName}}</span>
+                                        </span>
+                                    </div>
+										</div>
+                                    <div class="col">
+                                        <div class="itemRight">
+                                            <div ng-switch="item.status">
+                                                <div ng-switch-when="Unstarted">
+                                                    <img src="img/Unstarted.png" >
+                                                    </div>
+                                                    <div ng-switch-when="Assessing">
+                                                        <img src="img/Assessing.png" >
+                                                        </div>
+                                                        <div ng-switch-when="Resolving">
+                                                            <img src="img/Resolving.png" >
+                                                            </div>
+                                                            <div ng-switch-when="En route">
+                                                                <img src="img/Enroute.png" >
+                                                                </div>
+                                                                <div ng-switch-when="Closed">
+                                                                    <img src="img/Resolved.png" >
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ion-item>
+                                            </ion-list>
+                                        </ion-content>
+                                    </ion-view>

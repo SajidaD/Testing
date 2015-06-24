@@ -1,0 +1,19 @@
+<ion-view cache-view="false">
+  <ion-nav-title>1 / 2</ion-nav-title>
+  <ion-content>
+    <div class="card">
+      <div class="item item-divider">Title</div>
+      <label class="item item-input">
+        <input type="text" placeholder="Item title" ng-model="item.title" required>
+      </label>
+      <div class="item item-divider">Due Date</div>
+      <label class="item item-input">
+        <input type="date" placeholder="Due date" ng-model="item.date" required>
+      </label>
+    </div>
+  </ion-content>
+  <ion-footer-bar align-title="left" class="bar-dark">
+    <h1 class="title"></h1>
+    <a nav-direction="forward" class="button icon-right ion-chevron-right" ui-sref="create.categories" ng-disabled="itemForm.$invalid"></a>
+  </ion-footer-bar>
+</ion-view>

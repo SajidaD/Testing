@@ -1,0 +1,26 @@
+<ion-view cache-view="false">
+  <ion-nav-title>{{issueDetails._id}}</ion-nav-title>
+  <ion-nav-buttons side="primary">
+    <a class="button icon ion-android-exit" ng-click="close()"></a>
+  </ion-nav-buttons>
+    <div class="tabs tabs-top">
+		<a class="tab-item active"  ng-click="Details(issueDetails)">
+		Details
+		</a>
+		<a class="tab-item"         ng-click="SpareParts(issueDetails)">
+		SpareParts
+		</a>
+		<a class="tab-item"       ng-click="Directions(issueDetails)">
+			Directions
+		</a>
+ </div>
+  <ion-content>
+
+
+ </ion-content>
+  <ion-footer-bar align-title="left" >
+    <div class="buttons">
+      <button class="button" ng-click="doSomething()">En-Route ></button>
+    </div>
+  </ion-footer-bar>
+  </ion-view>

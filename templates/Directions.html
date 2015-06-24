@@ -1,0 +1,90 @@
+<ion-view class="dirView" >
+ <ion-content>
+      <!-- <ion-list>
+		<div class="card">
+       <ion-item class="dirCell" ng-repeat="RoutingInformation in DirectionRoute">
+		   <div class="row">
+		   <div id="dirCol" height="35" width="35">
+                  <div class = "dirImageDiv" ng-if="RoutingInformation.maneuver === 'turn-sharp-left'">
+                      <img class="directionImage" ng-src="img/turn-sharp-left.png" height="35" width="35" >
+                  </div>
+                 <div  ng-if="RoutingInformation.maneuver === 'uturn-right'">
+                      <img class="directionImage" src="img/uturn-right.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'turn-slight-right'">
+                      <img class="directionImage" src="img/turn-slight-right.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'merge'">
+                      <img class="directionImage" src="img/Merge.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'roundabout-left'">
+                      <img class="directionImage" src="img/roundabout-left.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'roundabout-right'">
+                      <img class="directionImage" src="img/roundabout-right.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'uturn-left.png'">
+                      <img class="directionImage" src="img/uturn-left.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'turn-slight-left'">
+                      <img src="img/turn-slight-left.png" height="35" width="35" >
+                  </div>
+                  <div class = "dirImageDiv" ng-if="RoutingInformation.maneuver === 'turn-left'">
+                      <img class="directionImage" src="img/turn-left.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'ramp-right'">
+                      <img src="img/ramp-right.png" height="35" width="35" >
+                  </div>
+                  <div class = "dirImageDiv" ng-if="RoutingInformation.maneuver === 'turn-right'">
+                      <img class="directionImage" src="img/Turn-right.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'fork-right'">
+                      <img src="img/fork-right.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'straight'">
+                      <img src="img/straight.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'fork-left'">
+                      <img src="img/fork-left.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'turn-sharp-right'">
+                      <img src="img/turn-sharp-right.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'ramp-left'">
+                      <img src="img/Ramp-left.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'keep-left'">
+                      <img src="img/Keep-left.png" height="35" width="35" >
+                  </div>
+                  <div ng-if="RoutingInformation.maneuver === 'keep-right'">
+                      <img src="img/Keep-Right.png" height="35" width="35" >
+                  </div>
+				    </div>
+				  <div class="col2" id="dirCol2">
+                   <div class="col">
+                   	  <div ng-if="RoutingInformation.maneuver === ''">
+                   	  	 <span class = "dirh2" >{{RoutingInformation.maneuver  +  RoutingInformation.distance.text}}</span>
+                   	  	 </div>
+                   	  	 <div ng-if="RoutingInformation.maneuver != ''">
+				  <span class = "dirh2" >{{RoutingInformation.maneuver  +"    :    "+  RoutingInformation.distance.text}}</span>
+				   </div>
+				   </div>
+                  <div class="col">
+				  <span class = "dirh4">{{RoutingInformation.duration.text}}</span>
+                   </div>
+				  <div class="col" id="instruction">
+					   <div class="row">
+				  <div class="item-text-wrap">{{stripHTML(RoutingInformation.instructions)}}</div>
+				     </div>
+					</div>
+					</div>
+		 </div> 
+       </ion-item>
+    
+      </div>
+     </ion-list> -->
+     
+     <div id="directions-panel"></div>
+	  </ion-content>
+</ion-view>
+

@@ -1,0 +1,17 @@
+<ion-view cache-view="false">
+  <ion-nav-title>{{navtitle}}</ion-nav-title>
+  <ion-nav-buttons side="primary">
+    <a class="button icon ion-android-exit" ng-click="close()"></a>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <a class="button icon ion-plus-round" ui-sref="create.general"></a>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="item in items" ui-sref="detail({id: item._id})">
+        {{item.title}}
+        <p>{{item.date | date:'dd/MM/yyyy'}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,365 @@
+{
+    "documents": [
+    {
+   "_id": "390555ab-c675-4dba-b055-e445f8424533",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-56",
+   "type": "Line Failure",
+   "status": "Assessing",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 1332705785000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "testph",
+   "latestStateChange": 1332705785000,
+   "_status": "synchronized"
+ },
+ {
+   "_id": "398555ab-c675-4dba-b055-e445f8424533",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-101",
+   "type": "Wifi Failure",
+   "status": "Assessing",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 1032705785000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "Peter Ball",
+   "latestStateChange": 1432705725,
+   "_status": "synchronized"
+ },
+ {
+   "_id": "522d0fa7-524d-45d5-a8ec-a6c0fd12e2da",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-55",
+   "type": "Power Line Failure",
+   "status": "Unstarted",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 1432705725000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "",
+   "latestStateChange": 1432705725,
+   "_status": "synchronized"
+ },
+ {
+   "_id": "52289fa7-524d-45d5-78ec-a6c0fd12e2da",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-98",
+   "type": "Water Pump Failure",
+   "status": "En route",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 1438705725000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "demo1",
+   "latestStateChange": 1432705725,
+   "_status": "synchronized"
+ },
+ {
+   "_id": "cee90eea-b494-4bf8-80bb-dfe9df76df97",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-57",
+   "type": "Failure",
+   "status": "Unstarted",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 1832705725000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "",
+   "latestStateChange": 1432705725,
+   "_status": "synchronized"
+ },{
+   "_id": "cee90eea-b494-5625-80bb-dfe9df76d122",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-66",
+   "type": "AC Failed",
+   "status": "Unstarted",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 2232706725000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "",
+   "latestStateChange": 1432705725,
+   "_status": "synchronized"
+ },{
+   "_id": "cee90eea-b494-5625-80bb-46e9df76d122",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-42",
+   "type": "Fan Failed",
+   "status": "En route",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 2232706725000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "Ricky Ponting",
+   "latestStateChange": 1132705725,
+   "_status": "synchronized"
+ },
+ {
+   "_id": "cee90eea-b494-4bf8-80bb-dfe9df76d322",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-69",
+   "type": "TV plug",
+   "status": "Closed",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 1132705725000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "Orim pek",
+   "latestStateChange": 1432705725,
+   "_status": "synchronized"
+ },
+ {
+   "_id": "cee90eea-b494-4bf8-90bb-dfe9df76d323",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-78",
+   "type": "Radio plug",
+   "status": "Closed",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 1732705725000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "James Anderson",
+   "latestStateChange": 1432705725,
+   "_status": "synchronized"
+ },
+ {
+   "_id": "cee90eea-b494-4bf8-90bb-dfe9df76d324",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-77",
+   "type": "Radio plug",
+   "status": "Closed",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 1732705725000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "demo1",
+   "latestStateChange": 1432705725,
+   "_status": "synchronized"
+ },
+ {
+   "_id": "cee90eea-b494-4bf8-90bb-dfe9df76d325",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-79",
+   "type": "Radio plug",
+   "status": "En route",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 1732705725000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "James Anderson",
+   "latestStateChange": 1432705725,
+   "_status": "synchronized"
+ },
+ {
+   "_id": "cee90eea-b494-4bf8-90bb-dfe9df76d32",
+   "_rev": 1,
+   "_type": "Issue",
+   "id": "PF-78",
+   "type": "Radio plug",
+   "status": "Closed",
+   "location": {
+     "latitude": 19.186788,
+     "longitude": 72.848871
+   },
+   "reported": 1732705725000,
+   "severity": "major",
+   "description": "Six reported cases of lack of voltage over a period of four days.",
+   "spareParts": [
+     {
+       "id": "1217335.002",
+       "name": "Powerline mount",
+       "amount": 0
+     },
+     {
+       "id": "1919950.537",
+       "name": "Line clamp",
+       "amount": 5
+     }
+   ],
+   "assignedTo": "demo1",
+   "latestStateChange": 1432705725,
+   "_status": "synchronized"
+ }]
+}
+
+
+
+

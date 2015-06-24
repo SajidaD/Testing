@@ -1,0 +1,14 @@
+{
+    "currentUser": {
+      
+        "id": "userprofile",
+        "username": "demo1",
+        "email": "jdoe@example.org",
+        "fullName": "Sajida Deshmukh",
+        "profile": {},
+        "roles": [],
+        "groups": [],
+        "permissions": []
+		
+    }
+}

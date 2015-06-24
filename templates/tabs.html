@@ -1,0 +1,86 @@
+<ion-view cache-view="false">
+<!-- <ion-nav-title>Title</ion-nav-title>
+ <ion-nav-buttons side="primary">
+    <a class="button icon ion-android-exit" ng-click="close()"></a>
+  </ion-nav-buttons> -->
+  
+  <ion-nav-bar class="bar-positive">
+  <ion-nav-buttons side="left">
+    <i class="ion-android-arrow-back" ng-click="myGoBack()"></i>
+  </ion-nav-buttons>
+  <ion-nav-title class="ion-alert-circled"><font size="4">&nbsp&nbsp{{tabName}}</font></ion-nav-title>
+  </ion-nav-bar>
+  <!-- <ion-nav-title align-title="Center"><font size="4">&nbsp{{tabName}}</font></ion-nav-title> -->
+  
+<ion-tabs class="tabs-top">
+
+   <ion-tab class="issueTab" title="Details"  ng-click="GetPageToMove(0)">
+       <ion-nav-view name="Details-tab"></ion-nav-view>
+   </ion-tab>
+
+   <ion-tab class="issueTab" title="Spare Parts"  ng-click="GetPageToMove(1)">
+       <ion-nav-view name="SpareParts-tab"></ion-nav-view>
+   </ion-tab>
+<div ng-if= "issueDetails.status!='Closed'">
+   <ion-tab class="issueTab" title="Directions" ng-click="GetPageToMove(2)">
+       <ion-nav-view name="Directions-tab"></ion-nav-view>
+   </ion-tab>
+   </div>
+
+</ion-tabs>
+
+
+    <ion-footer-bar align-title="left" class="bar-dark">
+        <h1 class="title"></h1>
+        <div class="buttons" ng-click="showPopup()">
+        	<div ng-if="issueDetails.status != 'Closed'">
+        	<div ng-if="issueDetails.status != 'Resolving'">
+        		<div ng-if="showFooterButton != 'FALSE'">
+        	<ionic-timepicker etime="slots.epochTime" format="slots.format" step="slots.step">  
+            <button class="button button-block">{{stateButtonName + " >"}}   </button>
+            </ionic-timepicker>
+           </div>
+           <div ng-if="showFooterButton == 'FALSE'">
+           	<button class="buttons" id="disableBtn">{{stateButtonName + " >"}}</button>
+           	</div>
+            </div>
+            
+            <div ng-if="showFooterButton != 'FALSE'">
+            <div ng-if="issueDetails.status == 'Resolving'">
+            	<button class="buttons" id="customBtn" ng-click="setTimerClicked()">Mark Resolved&nbsp;></button>
+            </div>
+            </div>
+            
+            <div ng-if="showFooterButton == 'FALSE'">
+            <div ng-if="issueDetails.status == 'Resolving'">
+            	<button class="buttons" id="disableBtn">Mark Resolved&nbsp;></button>
+            </div>
+            </div>
+            
+             
+            
+        </div>
+       </div>
+      <div ng-if="selectedTab == 'spareParts'">
+      <div ng-if="issueDetails.status != 'Unstarted'">
+      	<div ng-if="disableSpareParts == 'TRUE'">
+        <!-- <button class="button" id="disableBtn" ng-click="sparePartsSaved()">Reset</button> -->
+            </div>
+            <div ng-if="disableSpareParts == 'FALSE'">
+        <button class="button" id="resetBtn" ng-click="sparePartsSaved()">Reset</button>
+            </div>
+            </div>
+            </div>
+       
+        <!-- <label class="item item-input">
+            <span class="input-label">Date</span>
+            <input type="time" >
+        </label>
+        <button class="button button-clear">
+            Cancel
+        </button> -->
+    </ion-footer-bar>
+
+</ion-view>
+
+

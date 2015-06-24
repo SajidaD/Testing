@@ -1,0 +1,29 @@
+<ion-view>
+ <ion-content>
+     <ion-list>
+	 <div class="card">
+     <ion-item class="cell" ng-repeat="item in $root.tempSpareParts">
+	  <div class="row">
+		    <div class="col">
+         <div class="issueTab">{{ item.name }}</div>
+         <div class="detailCol">{{ item.id }}</div>
+	 </div>
+	  <div class="col">
+         <!-- <div class="itemRight"> -->
+             <label class="item item-input">
+             	<div ng-if="disableSpareParts == 'TRUE'">
+                 <input type="number" value={{item.amount}} min="0" max="20" disabled>
+                </div>
+                <div ng-if="disableSpareParts == 'FALSE'">
+                 <input type="number" ng-model="$root.tempSpareParts[$index].amount" min="0" max="20">
+                </div>
+             </label>
+         <!-- </div> -->
+		  </div>
+		  </div>
+     </ion-item>
+	  </div>
+     </ion-list>
+
+ </ion-content>
+</ion-view>

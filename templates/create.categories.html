@@ -1,0 +1,18 @@
+<ion-view cache-view="false">
+  <ion-nav-title>2 / 2</ion-nav-title>
+  <ion-content>
+    <div class="card">
+      <div class="item item-divider">Categories</div>
+      <div class="item item-body">
+        <ion-checkbox ng-repeat="category in categories" ng-model="category.checked" ng-checked="category.checked">
+          {{category.name}}
+        </ion-checkbox>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar align-title="left" class="bar-dark">
+    <h1 class="title"></h1>
+    <a nav-direction="back" class="button icon-right ion-chevron-left" ui-sref="create.general" ng-disabled="itemForm.$invalid"></a>
+    <button type="submit" class="button button-balanced icon ion-android-done">Save</button>
+  </ion-footer-bar>
+</ion-view>

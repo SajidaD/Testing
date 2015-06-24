@@ -1,0 +1,40 @@
+<ion-view cache-view="false">
+    <ion-content >
+
+        <div class="row">
+			<div class="col">
+            	<div class="detailColLeft"><b>{{issueDetails.type}}</b></div>
+			</div>
+				<div class="col">
+            		<div class="detailColRight"><b>{{getdatetime(issueDetails.reported)}}</b></div>
+				</div>
+        </div>
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center={{issueDetails.location.latitude}},{{issueDetails.location.longitude}}&zoom=13&size=380x200&maptype=roadmap
+           &markers=color:red%7Clabel:S%7C{{issueDetails.location.latitude}}, {{issueDetails.location.longitude}}" hspace="50" >
+
+        <div class="row">
+			<div class="col">
+            	<div class="detailCol">Severity : <b>{{issueDetails.severity}}  </b></div>
+			</div>
+			<div class="col" ng-if = "issueDetails.status == 'En route' || issueDetails.status == 'Assessing' || issueDetails.status == 'Resolving'">
+            	<div class="detailCol">Since : <b>{{getdatetime(issueDetails.latestStateChange)}}</b></div>
+			</div>
+			<div class="col" ng-if = "issueDetails.status == 'Unstarted'">
+            	<div class="detailCol">Distance : <b>{{getDistanceFromSourceToDestination(issueDetails.location)}}</b></div>
+			</div>
+        </div>
+        <div class="row">
+			<div class="col">
+            	<div class="detailCol">Status : <b>{{issueDetails.status}}</b></div>
+			</div>
+        </div>
+		<br/>
+		
+		  <div class="row">
+        	  <div id="box">
+           	   {{issueDetails.description}}
+        	</div>
+		  </div>
+    </ion-content>
+   
+</ion-view>
